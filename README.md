@@ -14,3 +14,5 @@ Bu proje Patika.dev ve A101 Yeni Mağazacılık A.Ş. İş Birliği ile açılan
 
 + OOP prensiplerine uygun geliştirilmiştir.
 
++ Detaylı log bilgilerini görmek için Slf4j kütüphanesi kullanıldı.
+

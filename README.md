@@ -6,7 +6,7 @@ Bu proje Patika.dev ve A101 Yeni Mağazacılık A.Ş. İş Birliği ile açılan
 
 + Java programlama dilinde yazılmıştır ve Maven repo kullanılmıştır.
 
--Tool olarak Selenium Webdriver,git ve github kullanılmıştır.
++Tool olarak Selenium Webdriver,git ve github kullanılmıştır.
 
 -Projede TestNG kütüphanesi kullanılmıştır.
 

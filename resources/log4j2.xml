@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Properties>
-        <Property name="basePath">target/logs</Property>
+        <Property name="basePath">src/test/resources/logs</Property>
     </Properties>
     <Appenders>
-        <RollingFile name="file"
-                     filePattern="${basePath}/A101FinalCase-%d{HH-mm-ss.SSS}.log">
+        <RollingFile name="File"
+                     filePattern="${basePath}/A101FinalCaseTest-%d{HH-mm-ss.SSS}.log">
             <PatternLayout>
                 <pattern>%d %p %c{1.} [%t] %m%n</pattern>
             </PatternLayout>
-            <SizeBasedTriggeringPolicy size="500" />
+            <SizeBasedTriggeringPolicy size="3000" />
         </RollingFile>
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
     </Appenders>
     <Loggers>
-
-        <Logger name="tests.HepsiBuradaTest1" level="trace" additivity="false">
+        <Logger name="tests.HepsiburadaTest2" level="trace" additivity="false">
             <AppenderRef ref="Console"/>
-            <AppenderRef ref="file"/>
+            <AppenderRef ref="File"/>
         </Logger>
-
-        <Logger name="tests.HepsiBuradaTest2" level="warn" additivity="false">
-            <AppenderRef ref="Console"/>
-            <AppenderRef ref="file"/>
-        </Logger>
-
         <Root level="info">
             <AppenderRef ref="Console"/>
-            <AppenderRef ref="file"/>
+            <AppenderRef ref="File"/>
         </Root>
     </Loggers>
+</Configuration>

@@ -26,7 +26,7 @@ public abstract class TestBaseRapor {
 
         //rapor oluştuktan sonra raporunuz nereye eklensin istiyorsanız buraya yazıyorsunuz.
         String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());// Üstüste oluşturmasın diye
-        String filePath = System.getProperty("user.dir") + "/target/Rapor/rapor"+date+".html";
+        String filePath = System.getProperty("user.dir") + "/src/test/resources/Rapor/rapor"+date+".html";
         //oluşturmak istediğimiz raporu (html formatında) başlatıyoruz, filePath ile dosya yolunu belirliyoruz.
         extentHtmlReporter = new ExtentHtmlReporter(filePath);
         extentReports.attachReporter(extentHtmlReporter);

@@ -19,7 +19,6 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
 import static org.testng.Assert.assertTrue;
 
 public class CommonMethods {
@@ -53,6 +52,7 @@ public class CommonMethods {
     public static void hover(WebElement element) {
         Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(element).perform();
+      //  CommonMethods.waitFor(3);
     }
 
     /* Bu metot ile sayfalar arası geçiş yapılır */

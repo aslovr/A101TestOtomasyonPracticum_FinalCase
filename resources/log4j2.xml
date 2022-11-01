@@ -9,14 +9,18 @@
             <PatternLayout>
                 <pattern>%d %p %c{1.} [%t] %m%n</pattern>
             </PatternLayout>
-            <SizeBasedTriggeringPolicy size="3000" />
+            <SizeBasedTriggeringPolicy size="3700" />
         </RollingFile>
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="tests.HepsiburadaTest2" level="trace" additivity="false">
+        <Logger name="tests.finalCase1" level="trace" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+        <Logger name="tests.finalCase2" level="trace" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File"/>
         </Logger>

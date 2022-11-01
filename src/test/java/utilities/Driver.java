@@ -37,15 +37,18 @@ public class Driver {
                     break;
                 default:
                     ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--incognito");
-                    options.addArguments("--start-maximized");
-                    options.addArguments("--ignore-certificate-errors");
-                    options.addArguments("--allow-insecure-lokalhost");
-                    options.addArguments("--acceptInsecureCerts");
-                    options.addArguments("--disable-blink-features=AutomationControlled");
-                    options.addArguments("--disable-extensions");
+                   //options.addArguments("--incognito");
+                   //options.addArguments("--start-maximized");
+                   //options.addArguments("--ignore-certificate-errors");
+                   //options.addArguments("--allow-insecure-lokalhost");
+                   //options.addArguments("--acceptInsecureCerts");
+                   //options.addArguments("--disable-blink-features=AutomationControlled");
+                   options.addArguments("--disable-blink-features");
+                   options.addArguments("--disable-blink-features=AutomationControlled");
+                   options.addArguments("--disable-extensions");
+                   options.addArguments("--disable-notifications");
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(options);
             }
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));

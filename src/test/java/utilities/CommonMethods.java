@@ -71,25 +71,25 @@ public class CommonMethods {
         }
     }
 
-    /* Web elementin görünür olmasını bekler */
+    /* Webelementin görünür olmasını bekler */
     public static WebElement waitForVisibility(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    /* Web elementin görünür olmasını bekler */
+    /* Webelementin görünür olmasını bekler */
     public static WebElement waitForVisibility(By locator, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    /* Web elementin görünür olmasını bekler */
+    /* Webelementin görünür olmasını bekler */
     public static WebElement waitForClickablility(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    /* Web elementin görünür olmasını bekler */
+    /* Webelementin görünür olmasını bekler */
     public static WebElement waitForClickablility(By locator, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -143,7 +143,7 @@ public class CommonMethods {
     }
 
 
-    /*  Bu metot ile doğru web elemetinin görünürlüğü doğrulanır  */
+    /*  Bu metot ile doğru webelementinin görünürlüğü doğrulanır  */
     public static String dogrulamaMethodu(WebElement actual) {
         String sonuc = "";
         try {
@@ -154,7 +154,7 @@ public class CommonMethods {
         return sonuc;
     }
 
-    /* Bu metot ile webelemetine tiklanmasi sağlanir */
+    /* Bu metot ile webelementine tiklanmasi sağlanir */
     public static void webElementClick(WebElement element) {
         CommonMethods.waitFor(5);
         CommonMethods.jsScrollClick(element);

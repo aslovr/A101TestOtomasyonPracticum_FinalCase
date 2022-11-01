@@ -24,7 +24,7 @@ public class finalCase2 extends TestBaseRapor {
 
 
     @Test
-    public void kullaniciGirişiYapilmadanSepeteEkleme() throws IOException {
+    public void kullaniciGirisiYapilmadanSepeteEkleme() throws IOException {
         homePage = new HomePage();
         productPage = new ProductPage();
         shoppingCartPage = new ShoppingCartPage();

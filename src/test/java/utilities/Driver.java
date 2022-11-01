@@ -37,12 +37,6 @@ public class Driver {
                     break;
                 default:
                     ChromeOptions options = new ChromeOptions();
-                   //options.addArguments("--incognito");
-                   //options.addArguments("--start-maximized");
-                   //options.addArguments("--ignore-certificate-errors");
-                   //options.addArguments("--allow-insecure-lokalhost");
-                   //options.addArguments("--acceptInsecureCerts");
-                   //options.addArguments("--disable-blink-features=AutomationControlled");
                    options.addArguments("--disable-blink-features");
                    options.addArguments("--disable-blink-features=AutomationControlled");
                    options.addArguments("--disable-extensions");

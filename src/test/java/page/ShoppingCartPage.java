@@ -1,13 +1,11 @@
 package page;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.CommonMethods;
 import utilities.Driver;
 
-import java.util.List;
 import java.util.Locale;
 
 import static org.testng.Assert.assertTrue;
@@ -25,7 +23,9 @@ public class ShoppingCartPage {
     @FindBy(xpath = "(//*[text()='Everest SM-BT11 Ince Rgb Kablosuz Mouse'])[2]")
     public WebElement sepettekiIkinciUrun;
     @FindBy(css = ".delete_product_3DFC0")
-    public WebElement sepetiTemizleme;
+    public WebElement urunuKaldir;
+    @FindBy(css = ".product_delete_1zR-0")
+    public WebElement urunAzalt;
 
 
     public static void urununSepetteDogrulanmasi(WebElement x, WebElement y, WebElement z) {
@@ -40,19 +40,14 @@ public class ShoppingCartPage {
     }
 
 
-    public static void sepetiTemizlemeveSayfayiKapat(WebElement element) {
+    public static void sepetiTemizleme(WebElement element1, WebElement element2) {
 
-        CommonMethods.hover(element);
-        CommonMethods.waitForClickablility(element,3);
-        CommonMethods.webElementClick(element);
-        CommonMethods.webElementClick(Driver.getDriver().findElement(By.xpath("//*[@class='sc-AxjAm iDSyON favoritesButton_q2rtP']")));
-        CommonMethods.hover(element);
-        CommonMethods.webElementClick(element);
-        Driver.quitDriver();
-
+        Driver.getDriver().navigate().refresh();
+        CommonMethods.hover(element1);
+        CommonMethods.webElementClick(element1);
+        CommonMethods.waitForClickablility(element2, 2);
+        CommonMethods.webElementClick(element2);
     }
-
-
 }
 
 

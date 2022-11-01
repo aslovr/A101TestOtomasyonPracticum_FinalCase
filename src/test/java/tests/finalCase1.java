@@ -15,19 +15,19 @@ import utilities.TestBaseRapor;
 import java.io.IOException;
 
 public class finalCase1 extends TestBaseRapor {
-    HomePage homePage ;
-    LoginPage loginPage ;
-    ProductPage productPage ;
-    ShoppingCartPage shoppingCartPage ;
+    HomePage homePage;
+    LoginPage loginPage;
+    ProductPage productPage;
+    ShoppingCartPage shoppingCartPage;
 
     private static final Logger logger = LogManager.getLogger(finalCase1.class.getName());
 
     @Test
     public void kullaniciGirisiYapilarakSepeteEkleme() throws IOException {
-         homePage = new HomePage();
-         loginPage = new LoginPage();
-         productPage = new ProductPage();
-         shoppingCartPage = new ShoppingCartPage();
+        homePage = new HomePage();
+        loginPage = new LoginPage();
+        productPage = new ProductPage();
+        shoppingCartPage = new ShoppingCartPage();
 
         logger.info("---Kullanıcı girişi yapılarak sepete ürün eklenmesi---");
         extentTest = extentReports.createTest("finalCase1", "Kullanıcı girişi yapılarak sepete ürün eklenmesi");
@@ -95,15 +95,16 @@ public class finalCase1 extends TestBaseRapor {
         logger.info("Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında doğrulanır");
         extentTest.pass("Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında doğrulanır");
 
-        ShoppingCartPage.sepetiTemizlemeveSayfayiKapat(shoppingCartPage.sepetiTemizleme);
-       logger.info("Sepetteki ürünler kaldırılır ve tarayıcı kapatılır");
-       extentTest.info("Sepetteki ürünler kaldırılır ve tarayıcı kapatılır");
-       extentReports.flush();
-       logger.info("===============================================================================================0");
+        ShoppingCartPage.sepetiTemizleme(shoppingCartPage.urunuKaldir, shoppingCartPage.urunAzalt);
+        logger.info("Sepetteki ürünler temizlenir");
+        extentTest.info("Sepetteki ürünler temizlenir");
+
+        Driver.quitDriver();
+        logger.info("Tarayıcı kapatılır");
+        extentTest.info("Tarayıcı kapatılır");
+        extentReports.flush();
+        logger.info("==============================================");
     }
-
-
-
 
 
 }

@@ -29,7 +29,7 @@ public class HomePage extends CommonMethods {
     public WebElement aramaMetinKutusu;
 
 
-    public static void kullaniciGirisi(){
+    public static void kullaniciGirisi() {
         HomePage homePage = new HomePage();
         LoginPage loginPage = new LoginPage();
         CommonMethods.hover(homePage.accountButonu);
@@ -40,10 +40,11 @@ public class HomePage extends CommonMethods {
         CommonMethods.webElementClick(loginPage.girisYapButonu2);
 
     }
+
     public static void urunArama(WebElement element) {
         CommonMethods.waitFor(3);
         element.sendKeys(ConfigReader.getProperty("aranacakUrun"), Keys.ENTER);
-      //  CommonMethods.waitForPageToLoad(3);
+        //  CommonMethods.waitForPageToLoad(3);
     }
 
 }

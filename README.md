@@ -1,10 +1,10 @@
 # A101TestOtomasyonPracticum_FinalCase
 Bu proje Patika.dev ve A101 Yeni Mağazacılık A.Ş. İş Birliği ile açılan Practicum'a ait Final case çalışmasıdır.
 
-### Kullanılan Teknolojiler
+# Kullanılan Teknolojiler
 + IDE olarak IntelliJ kullanılmıştır.  
 
-+ Java programlama dilinde yazılmıştır ve Maven repo kullanılmıştır.
++ Projenin yazıldığı kodlama dili #Java ve Maven repo kullanılmıştır.
 
 + Tool olarak Selenium Webdriver,git ve github kullanılmıştır.
 

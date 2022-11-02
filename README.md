@@ -21,6 +21,6 @@ Bu proje Patika.dev ve A101 Yeni Mağazacılık A.Ş. İş Birliği ile açılan
 # Proje Yapısının Açıklanması
 Projede aşağıda görmüş olduğunuz yapıyı kullandım;
 
-![Ekran görüntüsü 2022-11-02 235224](https://user-images.githubusercontent.com/111223290/199600555-9c418135-566a-43de-b596-c6e694debd78.png)
+![proje yapısı](https://user-images.githubusercontent.com/111223290/199602424-2b70d353-d20a-452b-a55a-3de7758f2ae9.png)
 
 

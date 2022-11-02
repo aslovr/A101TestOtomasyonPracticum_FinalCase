@@ -1,0 +1,34 @@
+2022-11-03 01:29:50,789 INFO t.finalCase1 [main] ---Kullanıcı girişi yapılarak sepete ürün eklenmesi---
+2022-11-03 01:29:56,592 INFO t.finalCase1 [main] Kullanıcı Hepsiburada.com sitesini ziyaret eder
+2022-11-03 01:29:56,973 INFO t.finalCase1 [main] Kullanıcının doğru sayfada olduğu doğrulanir
+2022-11-03 01:29:57,108 INFO t.finalCase1 [main] Kullanici çerezleri kabul eder
+2022-11-03 01:30:22,768 INFO t.finalCase1 [main] Kullanici gecerli e-mail ve sifre ile giris yapar
+2022-11-03 01:30:27,520 INFO t.finalCase1 [main] Yönlendirmeden sonra anasayfada kullanıcı giriş işleminin yapıldığı doğrulanır
+2022-11-03 01:30:30,664 INFO t.finalCase1 [main] Kullanıcı, burada satın almak istediği ürün için arama yapar
+2022-11-03 01:30:41,903 INFO t.finalCase1 [main] Kullanıcı, Arama sonucunda ekrana gelen ürün listesinden (veya tek bir sonuç da dönmüş olabilir) ürün seçer
+2022-11-03 01:30:53,051 INFO t.finalCase1 [main] Kullanıcı seçilen ürün için ilk satıcıdan ürünü sepete ekler 
+2022-11-03 01:31:01,136 INFO t.finalCase1 [main] Kullanıcı ürün sepetinizde,sayfasını kapatır
+2022-11-03 01:31:09,277 INFO t.finalCase1 [main] Kullanıcı seçilen ürün için ikinci satıcıdan ürünü sepete ekler
+2022-11-03 01:31:17,348 INFO t.finalCase1 [main] Kullanıcı ürün sepetinizde,sayfasını kapatır
+2022-11-03 01:31:17,394 INFO t.finalCase1 [main] İki farklı satıcıdan ürün seçildiği doğrulanır
+2022-11-03 01:31:27,045 INFO t.finalCase1 [main] Kullanici 'Sepetim' butonuna tıklar
+2022-11-03 01:31:27,068 INFO t.finalCase1 [main] Sepetim sayfasında olunduğu doğrulanır
+2022-11-03 01:31:27,118 INFO t.finalCase1 [main] Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında doğrulanır
+2022-11-03 01:31:44,569 INFO t.finalCase1 [main] Sepetteki ürünler temizlenir
+2022-11-03 01:31:45,303 INFO t.finalCase1 [main] Tarayıcı kapatılır
+2022-11-03 01:31:45,564 INFO t.finalCase1 [main] ==============================================
+2022-11-03 01:31:46,760 INFO t.finalCase2 [main] ---Kullanıcı girişi yapılmadan belirtilen ürünü sepete ekleme---
+2022-11-03 01:31:51,734 INFO t.finalCase2 [main] Kullanıcı Hepsiburada.com sitesini ziyaret eder
+2022-11-03 01:31:52,085 INFO t.finalCase2 [main] Kullanıcının doğru sayfada olduğu doğrulanir
+2022-11-03 01:31:52,258 INFO t.finalCase2 [main] Kullanici çerezleri kabul eder
+2022-11-03 01:31:55,441 INFO t.finalCase2 [main] Kullanıcı, burada satın almak istediği ürün için arama yapar
+2022-11-03 01:32:03,704 INFO t.finalCase2 [main] Kullanıcı, Arama sonucunda ekrana gelen ürün listesinden (veya tek bir sonuç da dönmüş olabilir) ürün seçer
+2022-11-03 01:32:14,861 INFO t.finalCase2 [main] Kullanıcı seçilen ürün için ilk satıcıdan ürünü sepete ekler 
+2022-11-03 01:32:22,956 INFO t.finalCase2 [main] Kullanıcı ürün sepetinizde,sayfasını kapatır
+2022-11-03 01:32:31,098 INFO t.finalCase2 [main] Kullanıcı seçilen ürün için ikinci satıcıdan ürünü sepete ekler
+2022-11-03 01:32:39,174 INFO t.finalCase2 [main] Kullanıcı ürün sepetinizde,sayfasını kapatır
+2022-11-03 01:32:39,211 INFO t.finalCase2 [main] İki farklı satıcıdan ürün seçildiği doğrulanır
+2022-11-03 01:32:49,841 INFO t.finalCase2 [main] Kullanici 'Sepetim' butonuna tıklar
+2022-11-03 01:32:49,861 INFO t.finalCase2 [main] Sepetim sayfasında olunduğu doğrulanır
+2022-11-03 01:32:49,908 INFO t.finalCase2 [main] Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında doğrulanır
+2022-11-03 01:32:50,594 INFO t.finalCase2 [main] Tarayıcı kapatılır

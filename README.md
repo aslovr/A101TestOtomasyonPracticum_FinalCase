@@ -46,6 +46,9 @@ aşağıda yer alan sınıflar mevcuttur.
 # Örnek Ekran Çıktıları
 + log yapısının çıkısı
 
+![log ekrani](https://user-images.githubusercontent.com/111223290/199615654-546d0cb2-3ed9-4433-8407-4cbae47b86a6.png)
+
 
 + TestNG Reports html raporunun görüntüsü
-+ 
+
+

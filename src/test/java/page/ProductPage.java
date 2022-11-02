@@ -5,7 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.CommonMethods;
 import utilities.Driver;
+
 import java.util.Locale;
+
 import static org.testng.Assert.assertNotEquals;
 
 
@@ -21,7 +23,7 @@ public class ProductPage extends CommonMethods {
     public WebElement ilkUrunuSepeteEkle;
     @FindBy(xpath = "(//*[text()='Lunatic Gamer Shop'])[1]")
     public WebElement ilkSaticiIsmi;
-    @FindBy(xpath = "//*[@class='checkoutui-Modal-2iZXl']")
+    @FindBy(xpath = "//*[@class='checkoutui-Modal-iHhyy79iR28NvF33vKJb']")
     public WebElement gelenSayfayiKapat;
     @FindBy(xpath = "(//*[@class='add-to-basket button small'])[1]")
     public WebElement ikinciUrunuSepeteEkle;

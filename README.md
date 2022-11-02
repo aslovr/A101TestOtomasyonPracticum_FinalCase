@@ -51,4 +51,6 @@ aşağıda yer alan sınıflar mevcuttur.
 
 + TestNG Reports html raporunun görüntüsü
 
+![testNG report-1](https://user-images.githubusercontent.com/111223290/199615850-39f8ee54-1355-4eff-b0b0-d6e3b86a1ea0.png)
+![testNG report-2](https://user-images.githubusercontent.com/111223290/199615856-41472af8-80fc-425d-8c2b-1e8e2c13785c.png)
 
